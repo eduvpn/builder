@@ -1,6 +1,6 @@
 #!/bin/bash
 
-PACKAGE_BRANCH=master
+PACKAGE_BRANCH=v2
 REPO_ROOT=${HOME}/repo/${PACKAGE_BRANCH}
 
 # targets to build for
@@ -12,8 +12,6 @@ TARGET_LIST=(\
 	
 # list of packages to build, *in this order*
 PACKAGE_LIST=(\
-	vpn-ca \
-	lc-daemon \
     php-fkooman-saml-sp \
     php-fkooman-jwt \
     php-fkooman-otp-verifier \

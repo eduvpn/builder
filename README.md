@@ -45,7 +45,7 @@ the file if you are curious, it is very simple!
 This will build all packages for all platforms specified at the top of 
 the `build_packages.sh` file.
 
-The repositories will be written to `${HOME}/repo/master`.
+The repositories will be written to `${HOME}/repo/v2`.
 
 # Updating
 
@@ -62,12 +62,12 @@ mentioned below:
 
     [LC]
     name=Let's Connect! Packages (EL $releasever)
-    baseurl=https://vpn-builder.tuxed.net/repo/master/centos-$releasever-$basearch
+    baseurl=https://vpn-builder.tuxed.net/repo/v2/centos-$releasever-$basearch
     gpgcheck=1
 
 ## Fedora
 
     [LC]
     name=Let's Connect! Packages (Fedora $releasever) 
-    baseurl=https://vpn-builder.tuxed.net/repo/master/fedora-$releasever-$basearch
+    baseurl=https://vpn-builder.tuxed.net/repo/v2/fedora-$releasever-$basearch
     gpgcheck=1

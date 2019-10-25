@@ -1,6 +1,6 @@
 #!/bin/sh
 
-PACKAGE_BRANCH=master
+PACKAGE_BRANCH=v2
 REPO_ROOT=${HOME}/repo/${PACKAGE_BRANCH}
 
 # Create Archive

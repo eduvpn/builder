@@ -1,6 +1,6 @@
 #!/bin/sh
 KEY_IDENTITY=release@example.org
-PACKAGE_BRANCH=master
+PACKAGE_BRANCH=v2
 REPO_ROOT=${HOME}/repo/${PACKAGE_BRANCH}
 mkdir -p ${REPO_ROOT}
 
