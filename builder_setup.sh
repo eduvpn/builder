@@ -20,6 +20,8 @@ config_opts['plugin_conf']['sign_enable'] = True
 config_opts['plugin_conf']['sign_opts'] = {}
 config_opts['plugin_conf']['sign_opts']['cmd'] = 'rpmsign'
 config_opts['plugin_conf']['sign_opts']['opts'] = '--addsign %(rpms)s'
+config_opts['use_bootstrap_image'] = True
+config_opts['use_bootstrap_container'] = True
 EOF
 
 cat << EOF > ${HOME}/.rpmmacros
