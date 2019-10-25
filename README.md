@@ -20,8 +20,7 @@ It is recommended you create a VM specifically for creating the repositories.
 We assume you have a fresh install of Fedora >= 30 with the following software 
 installed:
 
-    $ sudo dnf -y install fedora-packager rpm-sign nosync dnf-utils gnupg2 \
-		yum qemu-user-static
+    $ sudo dnf -y install fedora-packager rpm-sign nosync dnf-utils gnupg2 podman qemu-user-static
 
 ## Mock
 
@@ -59,7 +58,7 @@ that changed since the last run.
 
 # Configuration
 
-Depending on the OS you want to install the software from the generated  
+Depending on the OS you want to install the software from the generated
 repository on, perform the steps shown below steps.
 
 Make sure you replace the URL below, i.e. `vpn-builder.tuxed.net` with your 
