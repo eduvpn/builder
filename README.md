@@ -64,9 +64,9 @@ mentioned below:
 
 To install the PGP key:
 
-	rpm --import https://vpn-builder.tuxed.net/repo/master/RPM-GPG-KEY-LC
+	rpm --import https://vpn-builder.tuxed.net/repo/v2/RPM-GPG-KEY-LC
 
-Put this in `/etc/yum.repos.d/LC-master.repo`:
+Put this in `/etc/yum.repos.d/LC-v2.repo`:
 
     [LC]
     name=Let's Connect! Packages (EL $releasever)
@@ -77,9 +77,9 @@ Put this in `/etc/yum.repos.d/LC-master.repo`:
 
 To install the PGP key:
 
-	rpm --import https://vpn-builder.tuxed.net/repo/master/RPM-GPG-KEY-LC
+	rpm --import https://vpn-builder.tuxed.net/repo/v2/RPM-GPG-KEY-LC
 
-Put this in `/etc/yum.repos.d/LC-master.repo`:
+Put this in `/etc/yum.repos.d/LC-v2.repo`:
 
     [LC]
     name=Let's Connect! Packages (Fedora $releasever) 
