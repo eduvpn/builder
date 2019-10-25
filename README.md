@@ -14,13 +14,11 @@ a clean Fedora machine to start the builds from.
 
 # Preparation
 
-We assume you have a fresh install of Fedora >= 31 with the following software 
+We assume you have a fresh install of Fedora >= 30 with the following software 
 installed:
 
-    $ sudo dnf -y install fedora-packager rpm-sign nosync dnf-utils gnupg2 yum
-
-If you want to perform cross compiles, e.g. for `aarch64`, also install 
-`qemu-user-static`
+    $ sudo dnf -y install fedora-packager rpm-sign nosync dnf-utils gnupg2 \
+		yum qemu-user-static
 
 ## Mock
 
@@ -47,6 +45,10 @@ the `build_packages.sh` file.
 
 The repositories will be written to `${HOME}/repo/v2`.
 
+You can use the scripts `copy_to_archive.sh` to create a `.tar.xz` archive
+from the repository and `copy_to_web.sh` to copy it to your local web server,
+ready to be configured, see below.
+
 # Updating
 
 If you re-run the `build_packages.sh` script, it will only build the packages
@@ -60,12 +62,24 @@ mentioned below:
 
 ## CentOS
 
+To install the PGP key:
+
+	rpm --import https://vpn-builder.tuxed.net/repo/master/RPM-GPG-KEY-LC
+
+Put this in `/etc/yum.repos.d/LC-master.repo`:
+
     [LC]
     name=Let's Connect! Packages (EL $releasever)
     baseurl=https://vpn-builder.tuxed.net/repo/v2/epel-$releasever-$basearch
     gpgcheck=1
 
 ## Fedora
+
+To install the PGP key:
+
+	rpm --import https://vpn-builder.tuxed.net/repo/master/RPM-GPG-KEY-LC
+
+Put this in `/etc/yum.repos.d/LC-master.repo`:
 
     [LC]
     name=Let's Connect! Packages (Fedora $releasever) 
