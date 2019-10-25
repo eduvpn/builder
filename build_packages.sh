@@ -9,7 +9,7 @@ TARGET_LIST=(\
     fedora-30-x86_64 \
     fedora-31-x86_64 \
 )
-	
+
 # list of packages to build, *in this order*
 PACKAGE_LIST=(\
     php-fkooman-saml-sp \
@@ -32,7 +32,7 @@ PACKAGE_LIST=(\
 
 # update the repositories with RPM spec files
 for PACKAGE_NAME in "${PACKAGE_LIST[@]}"
-do	
+do
     # if we already have the package git repository, simply update it
     if [ -d "${PACKAGE_NAME}" ]
     then
@@ -42,11 +42,11 @@ do
             git pull origin ${PACKAGE_BRANCH}
         )
     else
-		# otherwise, clone it
+        # otherwise, clone it
         git clone -b ${PACKAGE_BRANCH} https://git.tuxed.net/rpm/${PACKAGE_NAME}
     fi
 done
-	
+
 for TARGET_NAME in "${TARGET_LIST[@]}"
 do
     echo "**********************************************************"
@@ -80,7 +80,7 @@ do
     if [ "" = "${SRPM_LIST}" ]
     then
         echo "*** No (new) packages to build!"
-		# continue with the next TARGET
+        # continue with the next TARGET
         continue
     fi
 
