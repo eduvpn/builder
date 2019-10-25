@@ -62,7 +62,7 @@ mentioned below:
 
     [LC]
     name=Let's Connect! Packages (EL $releasever)
-    baseurl=https://vpn-builder.tuxed.net/repo/master/centos-$releasever-$basearch
+    baseurl=https://vpn-builder.tuxed.net/repo/master/epel-$releasever-$basearch
     gpgcheck=1
 
 ## Fedora
