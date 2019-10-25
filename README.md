@@ -56,15 +56,15 @@ that changed since the last run.
 
 # Configuration
 
-Create the following snippet in `/etc/yum.repos.d/LC.repo` on the machine where 
-you want to install Let's Connect!. Make sure the files can be found on the URLs 
-mentioned below:
+Depending on the OS you want to install on perform the steps shown below steps.
+Make sure you replace the URL below, i.e. `vpn-builder.tuxed.net` with your 
+build host!
 
 ## CentOS
 
 To install the PGP key:
 
-	rpm --import https://vpn-builder.tuxed.net/repo/master/RPM-GPG-KEY-LC
+	$ sudo rpm --import https://vpn-builder.tuxed.net/repo/master/RPM-GPG-KEY-LC
 
 Put this in `/etc/yum.repos.d/LC-master.repo`:
 
@@ -77,7 +77,7 @@ Put this in `/etc/yum.repos.d/LC-master.repo`:
 
 To install the PGP key:
 
-	rpm --import https://vpn-builder.tuxed.net/repo/master/RPM-GPG-KEY-LC
+	$ sudo rpm --import https://vpn-builder.tuxed.net/repo/master/RPM-GPG-KEY-LC
 
 Put this in `/etc/yum.repos.d/LC-master.repo`:
 
