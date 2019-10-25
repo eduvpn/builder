@@ -1,16 +1,19 @@
 # Release
 
-This document describes how to create an RPM repository containing all the 
-software built from scratch and signed with PGP.
+This document describes how to create RPM repositories containing all software 
+built from scratch and signed with PGP.
 
-Currently it will build packages for the following platforms on those same
-platforms:
+The repository will be read to be served from a web server and can be used by
+servers to install the software.
 
-* CentOS 7
-* Fedora 30, 31
+The builder will run on Fedora >= 30 and will build software for all supported
+RPM-based distributions:
 
-You'll be able to build everything from Fedora. So it is recommended to use
-a clean Fedora machine to start the builds from.
+* CentOS 7 (Red Hat Enterprise Linux 7)
+* Fedora 30
+* Fedora 31
+
+It is recommended you create a VM specifically for creating the repositories.
 
 # Preparation
 
@@ -46,17 +49,19 @@ the `build_packages.sh` file.
 The repositories will be written to `${HOME}/repo/v2`.
 
 You can use the scripts `copy_to_archive.sh` to create a `.tar.xz` archive
-from the repository and `copy_to_web.sh` to copy it to your local web server,
-ready to be configured, see below.
+from the repository and `copy_to_web.sh` to copy it to a local web server
+running no the same machine.
 
 # Updating
 
-If you re-run the `build_packages.sh` script, it will only build the packages
+If you re-run the `build_packages.sh` script, it will build the packages
 that changed since the last run.
 
 # Configuration
 
-Depending on the OS you want to install on perform the steps shown below steps.
+Depending on the OS you want to install the software from the generated  
+repository on, perform the steps shown below steps.
+
 Make sure you replace the URL below, i.e. `vpn-builder.tuxed.net` with your 
 build host!
 
