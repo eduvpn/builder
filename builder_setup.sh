@@ -1,6 +1,8 @@
 #!/bin/sh
 KEY_IDENTITY=release@example.org
-REPO_ROOT=${HOME}/repo-v2
+PACKAGE_BRANCH=master
+REPO_ROOT=${HOME}/repo/${PACKAGE_BRANCH}
+mkdir -p ${REPO_ROOT}
 
 # generate a PGP key
 gpg2 --batch --quick-generate-key --passphrase '' ${KEY_IDENTITY}
@@ -10,8 +12,8 @@ cat << 'EOF' > ${HOME}/.config/mock.cfg
 config_opts['nosync'] = True
 # config_opts['plugin_conf']['tmpfs_enable'] = True
 # config_opts['plugin_conf']['tmpfs_opts'] = {}
-# config_opts['plugin_conf']['tmpfs_opts']['required_ram_mb'] = 4096
-# config_opts['plugin_conf']['tmpfs_opts']['max_fs_size'] = '3072m'
+# config_opts['plugin_conf']['tmpfs_opts']['required_ram_mb'] = 2048
+# config_opts['plugin_conf']['tmpfs_opts']['max_fs_size'] = '1536m'
 # config_opts['plugin_conf']['tmpfs_opts']['mode'] = '0755'
 # config_opts['plugin_conf']['tmpfs_opts']['keep_mounted'] = False
 config_opts['plugin_conf']['sign_enable'] = True
@@ -27,8 +29,5 @@ cat << EOF > ${HOME}/.rpmmacros
 EOF
 
 gpg2 --export -a ${KEY_IDENTITY} > ${HOME}/RPM-GPG-KEY-LC
-
-# setup the ${HOME}/rpmbuild structure (if not yet there)
 rpmdev-setuptree
-# clean it up if it already existed...
 rpmdev-wipetree

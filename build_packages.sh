@@ -1,8 +1,7 @@
 #!/bin/bash
 
-PACKAGE_BRANCH=v2
-#PACKAGE_BRANCH=master
-REPO_ROOT=${HOME}/repo-${PACKAGE_BRANCH}
+PACKAGE_BRANCH=master
+REPO_ROOT=${HOME}/repo/${PACKAGE_BRANCH}
 
 # targets to build for
 TARGET_LIST=(\
@@ -32,7 +31,7 @@ PACKAGE_LIST=(\
 for PACKAGE_NAME in "${PACKAGE_LIST[@]}"
 do	
     # if we already have the package git repository, simply update it
-    if [ ! -f "${PACKAGE_NAME}" ]
+    if [ -d "${PACKAGE_NAME}" ]
     then
         (
             cd ${PACKAGE_NAME}
