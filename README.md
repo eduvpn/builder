@@ -73,7 +73,7 @@ To install the PGP key:
 
 Put this in `/etc/yum.repos.d/LC-master.repo`:
 
-    [LC]
+    [LC-master]
     name=Let's Connect! Packages (EL $releasever)
     baseurl=https://vpn-builder.tuxed.net/repo/master/epel-$releasever-$basearch
     gpgcheck=1
@@ -86,7 +86,7 @@ To install the PGP key:
 
 Put this in `/etc/yum.repos.d/LC-master.repo`:
 
-    [LC]
+    [LC-master]
     name=Let's Connect! Packages (Fedora $releasever) 
     baseurl=https://vpn-builder.tuxed.net/repo/master/fedora-$releasever-$basearch
     gpgcheck=1
