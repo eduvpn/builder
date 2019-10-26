@@ -1,10 +1,10 @@
 # Release
 
-This document describes how to create RPM repositories containing all software 
-built from scratch and signed with PGP.
+This document describes how to use this builder to create RPM repositories 
+containing all software built from scratch and signed with PGP.
 
-The repository will be read to be served from a web server and can be used by
-servers to install the software.
+The repositories will be ready to be served from a web server and can directly 
+be used by servers to install the software.
 
 The builder will run on Fedora >= 30 and will build software for all supported
 RPM-based distributions:
@@ -13,7 +13,7 @@ RPM-based distributions:
 * Fedora 30
 * Fedora 31
 
-It is recommended you create a VM specifically for creating the repositories.
+It is recommended you use a VM specifically for running the builder.
 
 # Preparation
 
@@ -35,8 +35,11 @@ build as.
 
 	$ ./builder_setup.sh
 	
-This will create a GPG key and setup various configuration files. Check 
+This will create a PGP key and setup various configuration files. Check 
 the file if you are curious, it is very simple!
+
+If you want to use an existing PGP key, you probably know how to do that, but
+check the setup script to see what you need to do to make use of it.
 
 # Building
 
@@ -53,7 +56,7 @@ running no the same machine.
 
 # Updating
 
-If you re-run the `build_packages.sh` script, it will build the packages
+If you re-run the `build_packages.sh` script, it will (only) build the packages
 that changed since the last run.
 
 # Configuration
