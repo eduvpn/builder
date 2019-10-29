@@ -13,7 +13,7 @@ TARGET_LIST=(\
 # list of packages to build, *in this order*
 PACKAGE_LIST=(\
     vpn-ca \
-    lc-daemon \
+    vpn-daemon \
     php-fkooman-saml-sp \
     php-fkooman-jwt \
     php-fkooman-otp-verifier \
