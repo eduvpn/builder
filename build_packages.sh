@@ -17,7 +17,7 @@ TARGET_LIST=(\
 PACKAGE_LIST=(\
     vpn-ca \
     vpn-daemon \
-    php-saml-sp \
+    php-fkooman-saml-sp \
     php-fkooman-jwt \
     php-fkooman-otp-verifier \
     php-fkooman-oauth2-server \
