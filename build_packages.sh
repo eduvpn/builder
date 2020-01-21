@@ -22,7 +22,6 @@ PACKAGE_LIST=(\
     php-fkooman-otp-verifier \
     php-fkooman-oauth2-server \
     php-fkooman-secookie \
-    php-fkooman-secookie3 \
     php-fkooman-sqlite-migrate \
     php-LC-openvpn-connection-manager \
     php-LC-common \
