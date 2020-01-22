@@ -18,6 +18,7 @@ PACKAGE_LIST=(\
     vpn-ca \
     vpn-daemon \
     php-fkooman-saml-sp \
+    php-saml-sp \
     php-fkooman-jwt \
     php-fkooman-otp-verifier \
     php-fkooman-oauth2-server \
