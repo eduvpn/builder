@@ -14,11 +14,12 @@ TARGET_LIST=(\
 PACKAGE_LIST=(\
     vpn-ca \
     vpn-daemon \
+    php-fkooman-secookie \
     php-fkooman-saml-sp \
+#    php-saml-sp \
     php-fkooman-jwt \
     php-fkooman-otp-verifier \
     php-fkooman-oauth2-server \
-    php-fkooman-secookie \
     php-fkooman-sqlite-migrate \
     php-LC-openvpn-connection-manager \
     php-LC-common \
