@@ -16,7 +16,8 @@ PACKAGE_LIST=(\
     vpn-daemon \
     php-fkooman-secookie \
     php-fkooman-saml-sp \
-#    php-saml-sp \
+    php-saml-sp \
+    php-saml-sp-artwork-eduVPN \
     php-fkooman-jwt \
     php-fkooman-otp-verifier \
     php-fkooman-oauth2-server \
