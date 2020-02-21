@@ -33,8 +33,6 @@ PACKAGE_LIST=(\
     vpn-portal-artwork-eduVPN \
     vpn-portal-artwork-LC \
     php-json-signer \
-    php-saml-ds \
-    php-saml-ds-artwork-eduVPN \
 )
 
 # update the repositories with RPM spec files
