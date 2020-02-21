@@ -6,7 +6,7 @@ containing all software built from scratch and signed with PGP.
 The repositories will be ready to be served from a web server and can directly 
 be used by servers to install the software.
 
-The builder will run on Fedora >= 30 and will build software for all supported
+The builder will run on Fedora >= 31 and will build software for all supported
 RPM-based distributions:
 
 * CentOS 7 (Red Hat Enterprise Linux 7)
