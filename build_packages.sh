@@ -92,4 +92,12 @@ do
     echo "* Building (${TARGET_NAME}): ${SRPM_LIST}..."
     echo "**********************************************************"
     mock --chain -r "${TARGET_NAME}" --localrepo="${REPO_ROOT}" --arch "${ARCH}" ${SRPM_LIST}
+
+    # the mock "sign" plugin is broken
+    # @see https://github.com/rpm-software-management/mock/issues/476
+
+    # sign (all) packages
+    rpmsign --addsign $(find -type f ${REPO_ROOT}/results/${TARGET_NAME} | grep \.rpm$ | xargs)
+    # recreate the repository
+    createrepo_c ${REPO_ROOT}/results/${TARGET_NAME}
 done

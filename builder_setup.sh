@@ -16,10 +16,10 @@ config_opts['nosync'] = True
 # config_opts['plugin_conf']['tmpfs_opts']['max_fs_size'] = '1536m'
 # config_opts['plugin_conf']['tmpfs_opts']['mode'] = '0755'
 # config_opts['plugin_conf']['tmpfs_opts']['keep_mounted'] = False
-config_opts['plugin_conf']['sign_enable'] = True
-config_opts['plugin_conf']['sign_opts'] = {}
-config_opts['plugin_conf']['sign_opts']['cmd'] = 'rpmsign'
-config_opts['plugin_conf']['sign_opts']['opts'] = '--addsign {{rpms}}'
+# config_opts['plugin_conf']['sign_enable'] = True
+# config_opts['plugin_conf']['sign_opts'] = {}
+# config_opts['plugin_conf']['sign_opts']['cmd'] = 'rpmsign'
+# config_opts['plugin_conf']['sign_opts']['opts'] = '--addsign {{rpms}}'
 EOF
 
 cat << EOF > ${HOME}/.rpmmacros
