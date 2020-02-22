@@ -98,7 +98,7 @@ do
     # @see https://github.com/rpm-software-management/mock/issues/476
 
     # sign (all) packages
-    rpmsign --addsign $(find -type f ${REPO_ROOT}/results/${TARGET_NAME} | grep \.rpm$ | xargs)
+    rpmsign --addsign $(find ${REPO_ROOT}/results/${TARGET_NAME} -type f | grep \.rpm$ | xargs)
     # recreate the repository
     createrepo_c ${REPO_ROOT}/results/${TARGET_NAME}
 done
