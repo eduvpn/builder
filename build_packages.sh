@@ -8,9 +8,9 @@ TARGET_LIST=(\
     epel-7-x86_64 \
     fedora-30-x86_64 \
     fedora-31-x86_64 \
-#    fedora-32-x86_64 \
-#    fedora-30-aarch64 \
-#    fedora-31-aarch64 \
+    fedora-32-x86_64 \
+    fedora-30-aarch64 \
+    fedora-31-aarch64 \
 )
 
 # list of packages to build, *in this order*
