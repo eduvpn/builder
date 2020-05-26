@@ -15,7 +15,6 @@ PACKAGE_LIST=(\
     vpn-ca \
     vpn-daemon \
     php-fkooman-secookie \
-    php-fkooman-saml-sp \
     php-saml-sp \
     php-saml-sp-artwork-eduVPN \
     php-fkooman-jwt \
