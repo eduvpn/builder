@@ -37,7 +37,7 @@ Clone the repository:
 **NOTE**: there are currently two branches in the builder repository, `master` 
 and `v2`. The `master` repository builds the development packages and the `v2`
 branch builds the production packages. Use `git checkout` to switch branches
-as desired.
+as desired. Follow the `v2` README if you are changing branches!
 
 Run `builder_setup.sh` with the user account you are going to 
 build as.
