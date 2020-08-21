@@ -12,6 +12,7 @@ RPM-based distributions:
 * CentOS 7 (Red Hat Enterprise Linux 7)
 * Fedora 31
 * Fedora 32
+* Fedora 33
 
 It is recommended you use a VM specifically for running the builder.
 
