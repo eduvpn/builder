@@ -10,8 +10,8 @@ The builder will run on Fedora >= 31 and will build software for all supported
 RPM-based distributions:
 
 * CentOS 7 (Red Hat Enterprise Linux 7)
-* Fedora 30
 * Fedora 31
+* Fedora 32
 
 It is recommended you use a VM specifically for running the builder.
 
@@ -29,6 +29,15 @@ Make sure your current user account is a member of the `mock` group:
     $ sudo usermod -a -G mock $(id -un)
 
 ## Setup
+
+Clone the repository:
+
+	$ git clone https://git.tuxed.net/rpm/builder
+
+**NOTE**: there are currently two branches in the builder repository, `master` 
+and `v2`. The `master` repository builds the development packages and the `v2`
+branch builds the production packages. Use `git checkout` to switch branches
+as desired.
 
 Run `builder_setup.sh` with the user account you are going to 
 build as.
