@@ -14,7 +14,6 @@ TARGET_LIST=(\
 
 # list of packages to build, *in this order*
 PACKAGE_LIST=(\
-    LC-release \
     vpn-ca \
     vpn-daemon \
     php-fkooman-secookie \
